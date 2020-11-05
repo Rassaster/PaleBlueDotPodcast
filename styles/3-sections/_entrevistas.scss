@@ -11,6 +11,7 @@
   .imgs-entrevistas-flex-container {
     display: flex;
     flex-flow: column wrap;
+    margin-top: 14px;
     img {
       @include img-entrevistas();
     }

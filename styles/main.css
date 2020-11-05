@@ -399,6 +399,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  margin-top: 14px;
 }
 
 .entrevistas .imgs-entrevistas-flex-container img {
