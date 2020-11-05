@@ -15,10 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -55,6 +51,7 @@ header {
 main {
   position: relative;
   top: 44px;
+  overflow-x: hidden;
 }
 
 footer {
