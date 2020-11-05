@@ -338,7 +338,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
 
 .img-mary-allen {
   position: absolute;
-  top: 1313px;
+  top: 1343px;
   left: -20px;
   width: 360px;
   height: 519px;
@@ -402,7 +402,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
 }
 
 .entrevistas .imgs-entrevistas-flex-container img {
-  width: 320px;
+  width: 100vw;
   height: 243px;
 }
 
