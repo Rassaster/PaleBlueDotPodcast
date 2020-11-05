@@ -1,0 +1,18 @@
+.novedades {
+  margin-top: 42px;
+  height: 341px;
+  background: $main-background-gradient;
+  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+  h2 {
+    @include white-header-mobile();
+    text-align: center;
+    padding: 64px 16px 0px 16px;
+  }
+  .anchor-button-container {
+    margin: 0px 16px 67px 16px;
+    .anchor-button {
+      @include anchor-button-mobile();
+      margin-top: 36px;
+    }
+  }
+}

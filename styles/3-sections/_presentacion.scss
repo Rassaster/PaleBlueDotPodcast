@@ -1,0 +1,23 @@
+.presentacion {
+  margin: 29px 16px 0 16px;
+  h1 {
+    font-family: $secondary-font-family;
+    font-size: $mobile-titles-font-size;
+    line-height: $mobile-titles-line-height;
+    font-weight: $font-weight-normal;
+  }
+  span:nth-child(1) {
+    text-decoration: $desktop-anchor-text-decoration;
+  }
+  span:nth-child(3) {
+    color: $primary-color;
+  }
+  p {
+    @include paragraph-content-mobile();
+    margin-top: 16px;
+  }
+  .anchor-button {
+    @include anchor-button-mobile;
+    margin-top: 36px;
+  }
+}

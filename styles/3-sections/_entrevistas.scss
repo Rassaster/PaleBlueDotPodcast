@@ -1,0 +1,18 @@
+.entrevistas {
+  position: relative;
+  margin: 54px 0 0 0;
+  #entrevistas {
+    @include anchor-span-position();
+  }
+  h2 {
+    @include black-header-mobile();
+    margin: 0 16px;
+  }
+  .imgs-entrevistas-flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    img {
+      @include img-entrevistas();
+    }
+  }
+}

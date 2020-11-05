@@ -1,0 +1,29 @@
+footer {
+  position: relative;
+  top: 44px;
+  height: 120px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  p {
+    @include paragraph-content-mobile();
+  }
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    a {
+      @include social-anchors-hover-active(); 
+      margin-right: 38px;
+      font-size: $mobile-anchor-button-font-size; 
+      color: $main-font-color;
+      &:nth-child(1) {
+        margin-left: 45px;
+      }
+      &:nth-child(5) {
+        margin-right: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.nosotros {
+  position: relative;
+  margin: 450.5px 16px 0 16px;
+  #nosotros {
+    @include anchor-span-position();
+  }
+  h2 {
+    @include black-header-mobile();
+  }
+  p {
+    @include paragraph-content-mobile();
+    margin-top: 8px;
+  }
+}

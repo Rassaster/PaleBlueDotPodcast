@@ -1,0 +1,71 @@
+// En este documento se definen valores generales de diseño a través de variables.
+// *************************************
+// *************** COLORS **************
+// *************************************
+// ------------------
+//  ---- General ----
+// ------------------
+$main-font-color: #060A24;
+$main-anchor-color: #FFFFFF;
+
+$primary-color: #0000EC;
+$secondary-color: #00F3BB;
+$ternary-color: #FFF;
+
+$main-background-color: #FFF;
+$main-background-gradient: linear-gradient(225deg, #0000FF, #0000A3);
+$anchor-button-gradient: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+// ------------------
+//  ---- Desktop ----
+// ------------------
+$desktop-anchor-active-color:rgba(6,10,36,0.56);
+
+//****************************************************************************************
+//****************************************************************************************
+
+// *************************************
+// *********** FONTS - TEXT ************
+// *************************************
+// ------------------
+//  ---- General ----
+// ------------------
+$main-content-font-family: 'IBM Plex Mono', sans-serif;
+$secondary-font-family: 'IBM Plex Sans', sans-serif;
+
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+$anchor-content-text-align: center;
+
+// ------------------
+// ----- Mobile -----
+// ------------------
+$mobile-titles-font-size: 3.6rem;
+$mobile-themes-font-size: 2.4rem;
+$mobile-anchor-button-font-size: 1.6rem;
+$mobile-nav-anchor-font-size: 1.6rem;
+$mobile-content-font-size: 1.4rem;
+
+$mobile-titles-line-height: 4.2rem;
+$mobile-nav-anchor-line-height: 2.8rem;
+$mobile-content-line-height: 2.2rem;
+$mobile-anchor-button-line-height: 2.2rem;
+
+// ------------------
+//  ---- Desktop ----
+// ------------------
+$desktop-anchor-text-decoration: line-through;
+
+$desktop-titles-font-size: 6.4rem;
+$desktop-subtitles-font-size: 4.8rem;
+$desktop-themes-font-size: 2.4rem;
+$desktop-button-font-size: 1.8rem;
+$desktop-nav-anchor-font-size: 1.6rem;
+$desktop-content-font-size: 1.6rem;
+
+$desktop-nav-anchor-line-height: 2.8rem;
+$desktop-content-line-height: 2.4rem;
+$desktop-button-line-height: 2.4rem;
+$desktop-themes-line-height: 2.4rem;
+

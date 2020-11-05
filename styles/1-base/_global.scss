@@ -1,0 +1,18 @@
+html {
+  font-size: 10px;
+  font-family: $main-content-font-family, $secondary-font-family, sans-serif;
+  color: $main-font-color;
+  letter-spacing: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: $main-font-color;
+  }
+}

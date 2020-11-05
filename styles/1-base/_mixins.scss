@@ -1,0 +1,105 @@
+// Este archivo es dedicado para bloques de estilo que se han identificado como recurrentes en el diseño de la página.
+
+
+// *************************************************** //
+// ***************** MOBILE @mixins ***************** //
+// *************************************************** //
+
+// *** BOTONES ANCHOR *** //
+@mixin anchor-button-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-size: $mobile-anchor-button-font-size;
+  font-weight: $font-weight-medium;
+  line-height: $mobile-anchor-button-line-height;
+  background: $secondary-color;
+  &:hover {
+    background: $anchor-button-gradient;
+    color: $secondary-color;
+    text-decoration: $desktop-anchor-text-decoration;
+  }
+  &:active {
+    color: $desktop-anchor-active-color;
+    text-decoration: $desktop-anchor-text-decoration;
+  }
+}
+// *** -------------- *** //
+
+// *** PÁRRAFOS *** //
+@mixin paragraph-content-mobile {
+  font-size: $mobile-content-font-size;
+  line-height: $mobile-content-line-height;
+}
+// *** -------- *** //
+
+// *** TÍTULOS *** //
+@mixin white-header-mobile {
+  font-family: $secondary-font-family;
+  font-size: $mobile-titles-font-size;
+  font-weight: $font-weight-normal;
+  color: $ternary-color;
+  line-height: $mobile-titles-line-height;
+}
+@mixin black-header-mobile {
+  font-family: $secondary-font-family;
+  font-size: $mobile-titles-font-size;
+  font-weight: $font-weight-normal;
+  color: $main-font-color;
+  line-height: $mobile-titles-line-height;
+}
+// *** ------- *** //
+
+// *** Spotify <iframe> *** //
+@mixin spotify-iframe-mobile {
+  width: 298px;
+  height: 225px;
+  margin-bottom: -6px; //Con el fin de lograr los 11px de separación entre cada <iframe>, y teniendo en cuenta que el <iframe> de Spotify agrega un margin-bottom: 17px;, le resto -6px para lograr la diferencia de 11px.
+}
+// *** --------------- *** //
+
+// *** Imagenes Sección Entrevistas *** //
+@mixin img-entrevistas {
+  width: 320px;
+  height: 243px;
+}
+// *** ---------------------------- *** //
+
+// *** Contenedor SVG Sección Tópicos *** //
+@mixin svg-container-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 130px;
+  img {
+    width: 104px;
+    height: 104px;
+    margin: 13px 0;
+  }
+  &:nth-child(3) {
+    margin-top: 36px;
+  }
+  &:nth-child(5), &:nth-child(7) {
+    margin-top: 52px;
+  }
+}
+// *** ------------------------------ *** //
+
+// *** Redes Sociales Hover y Active *** //
+@mixin social-anchors-hover-active {
+  &:hover {
+    color: $secondary-color;
+    text-decoration: $desktop-anchor-text-decoration;
+  }
+  &:active {
+    text-decoration: $desktop-anchor-text-decoration;
+  }
+}
+// *** ------------------------------ *** //
+
+@mixin anchor-span-position {
+  position: absolute;
+  top: -48px;
+}
