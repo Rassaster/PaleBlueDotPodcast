@@ -19,10 +19,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #060A24;
-}
-
 header {
   width: 100vw;
   height: 44px;
@@ -42,7 +38,7 @@ header {
   z-index: 80;
 }
 
-.logo-header {
+header a, header .logo-header {
   width: 2.4rem;
   height: 2.4rem;
   margin-left: 16px;
@@ -408,11 +404,15 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 14px;
 }
 
 .entrevistas .imgs-entrevistas-flex-container img {
   width: 100vw;
+  max-width: 320px;
   height: 243px;
 }
 

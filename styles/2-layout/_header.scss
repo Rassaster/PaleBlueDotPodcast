@@ -11,10 +11,9 @@ header {
   align-items: center;
   background: $main-background-color;
   z-index: 80;
-}
-
-.logo-header {
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-left: 16px;
+  a, .logo-header {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 16px;
+  }
 }

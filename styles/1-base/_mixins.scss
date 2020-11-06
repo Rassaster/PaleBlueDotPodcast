@@ -71,6 +71,7 @@
 // *** Imagenes Sección Entrevistas *** //
 @mixin img-entrevistas {
   width: 100vw;
+  max-width: 320px;
   height: 243px;
 }
 // *** ---------------------------- *** //
