@@ -54,9 +54,17 @@
 
 // *** Spotify <iframe> *** //
 @mixin spotify-iframe-mobile {
-  width: 298px;
-  height: 225px;
-  margin-bottom: -6px; //Con el fin de lograr los 11px de separación entre cada <iframe>, y teniendo en cuenta que el <iframe> de Spotify agrega un margin-bottom: 17px;, le resto -6px para lograr la diferencia de 11px.
+  // Al inspeccionar en  Chrome a través de LiveServer, los siguientes estilos se ajustan al mockup:
+    // width: 298px;
+    // height: 225px;
+    // margin-bottom: -6px; 
+      //Con el fin de lograr los 11px de separación entre cada <iframe>, y teniendo en cuenta que el <iframe> de Spotify agrega un margin-bottom: 17px;, le resto -6px para lograr la diferencia de 11px.
+
+  // Al inspeccionar el deploy a través de GitHub y repl.it en Chrome, los siguientes estilos se ajustan al mockup:
+  width: 301px;
+  height: 232px;
+  margin-bottom: 10px;
+
 }
 // *** --------------- *** //
 
