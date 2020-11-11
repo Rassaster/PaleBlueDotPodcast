@@ -44,10 +44,34 @@ header a, header .logo-header {
   margin-left: 16px;
 }
 
+@media screen and (min-width: 1024px) {
+  header {
+    height: 80px;
+  }
+  header .anchor-logo {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 100px;
+  }
+  header .anchor-logo .logo-header {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: unset;
+  }
+}
+
 main {
   position: relative;
   top: 44px;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    top: 80px;
+  }
 }
 
 footer {
@@ -104,6 +128,39 @@ footer .social-container a:nth-child(1) {
 
 footer .social-container a:nth-child(5) {
   margin-right: 45px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    top: 80px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer p {
+    margin-left: 100px;
+    font-size: 1.6rem;
+  }
+  footer .social-container {
+    margin-right: 100px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  footer .social-container a {
+    margin-right: 45px;
+    font-size: 1.8rem;
+  }
+  footer .social-container a:nth-child(1) {
+    margin-left: 0px;
+  }
+  footer .social-container a:nth-child(5) {
+    margin-right: 0px;
+  }
 }
 
 nav {
@@ -228,6 +285,50 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
           transform: rotate(-45deg) translate(-2%, 60%);
 }
 
+@media screen and (min-width: 1024px) {
+  nav {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 100px;
+  }
+  nav .hamburger-menu {
+    width: unset;
+    height: unset;
+  }
+  nav .hamburger-menu span, nav .hamburger-menu input {
+    display: none;
+  }
+  nav .hamburger-menu span input:checked ~ ul, nav .hamburger-menu input input:checked ~ ul {
+    height: auto;
+  }
+  nav .hamburger-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: unset;
+    right: unset;
+    width: auto;
+    background-color: #FFF;
+    overflow: visible;
+    height: 28px;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  nav .hamburger-menu ul li .nav-anchor {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+    color: #060A24;
+    margin: unset;
+    height: unset;
+    padding-right: 28px;
+  }
+  nav .hamburger-menu ul li:nth-child(4) .nav-anchor {
+    padding-right: 0px;
+  }
+}
+
 .presentacion {
   margin: 29px 16px 0 16px;
 }
@@ -247,10 +348,14 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   color: #0000EC;
 }
 
-.presentacion p {
+.presentacion .mobile-p {
   font-size: 1.4rem;
   line-height: 2.2rem;
   margin-top: 16px;
+}
+
+.presentacion .desktop-p {
+  display: none;
 }
 
 .presentacion .anchor-button {
@@ -283,6 +388,42 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   text-decoration: line-through;
 }
 
+@media screen and (min-width: 1024px) {
+  .presentacion {
+    margin: 120px 0 0 100px;
+  }
+  .presentacion h1 {
+    font-size: 6.4rem;
+    line-height: 8.4rem;
+  }
+  .presentacion h1 br {
+    display: none;
+  }
+  .presentacion .mobile-p {
+    display: none;
+  }
+  .presentacion .desktop-p {
+    display: block;
+    margin-top: 0px;
+    width: 628px;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .presentacion .anchor-button {
+    width: 226px;
+    height: 56px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .presentacion {
+    margin: 120px 0 0 200px;
+  }
+}
+
 .episodios {
   position: relative;
   width: 100%;
@@ -308,7 +449,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   margin-left: 16px;
 }
 
-.iframes-flex-container {
+.episodios .iframes-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,14 +463,84 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   margin-top: 21px;
 }
 
-.iframes-flex-container iframe {
+.episodios .iframes-flex-container iframe {
   width: 301px;
   height: 232px;
   margin-bottom: 10px;
 }
 
-.iframes-flex-container iframe:nth-child(4) {
+.episodios .iframes-flex-container iframe:nth-child(4) {
   margin-bottom: -1px;
+}
+
+@media screen and (min-width: 1024px) {
+  .episodios {
+    margin-top: 5px;
+    height: 942.6px;
+    -webkit-clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+  }
+  .episodios #episodios {
+    top: -80px;
+  }
+  .episodios h2 {
+    padding-top: 150px;
+    margin-left: 200px;
+    font-size: 4.8rem;
+  }
+  .episodios .iframes-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    margin: 26px 100px 17px 100px;
+    width: 85%;
+  }
+  .episodios .iframes-flex-container iframe {
+    width: 49%;
+    height: 232px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .episodios {
+    margin-top: 5px;
+    height: 1042.6px;
+    -webkit-clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+  }
+  .episodios h2 {
+    padding-top: 186px;
+    margin-left: 200px;
+    font-size: 4.8rem;
+  }
+  .episodios .iframes-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 26px 100px 17px 100px;
+    width: 1240px;
+  }
+  .episodios .iframes-flex-container iframe {
+    width: 584px;
+    height: 232px;
+  }
+  .episodios .iframes-flex-container iframe:nth-child(1), .episodios .iframes-flex-container iframe:nth-child(3) {
+    margin-right: 72px;
+  }
+  .episodios .iframes-flex-container iframe:nth-child(3), .episodios .iframes-flex-container iframe:nth-child(4) {
+    margin-top: 68px;
+  }
 }
 
 .offFlow-image-contain {
@@ -351,6 +562,38 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   height: 519px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+@media screen and (min-width: 1024px) {
+  .offFlow-image-contain {
+    width: 420.6px;
+    height: 620px;
+    top: 1120px;
+    left: 50px;
+  }
+  .offFlow-image-contain .img-mary-allen {
+    width: 457.6px;
+    height: 660px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offFlow-image-contain {
+    left: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offFlow-image-contain {
+    width: 457.6px;
+    height: 660px;
+    top: 1220px;
+    left: 200px;
+  }
+  .offFlow-image-contain .img-mary-allen {
+    width: 457.6px;
+    height: 660px;
+  }
 }
 
 .nosotros {
@@ -375,6 +618,49 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   font-size: 1.4rem;
   line-height: 2.2rem;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nosotros {
+    margin: 20.4px 0 0 520px;
+    width: 464px;
+  }
+  .nosotros #nosotros {
+    top: -350px;
+  }
+  .nosotros h2 {
+    font-size: 4.8rem;
+  }
+  .nosotros p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .nosotros p:nth-child(3) {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nosotros {
+    margin-left: 650px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nosotros {
+    margin: 0 0 0 720px;
+    width: 464px;
+  }
+  .nosotros h2 {
+    font-size: 4.8rem;
+  }
+  .nosotros p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .nosotros p:nth-child(3) {
+    margin-top: 24px;
+  }
 }
 
 .entrevistas {
@@ -416,6 +702,43 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   height: 243px;
 }
 
+@media screen and (min-width: 1024px) {
+  .entrevistas {
+    margin: 245px 0 0 0;
+  }
+  .entrevistas #entrevistas {
+    top: -200px;
+  }
+  .entrevistas h2 {
+    margin: 0 0 0 100px;
+    font-size: 4.8rem;
+  }
+  .entrevistas .imgs-entrevistas-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 36px;
+  }
+  .entrevistas .imgs-entrevistas-flex-container img {
+    width: 33vw;
+    max-width: 33vw;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .entrevistas h2 {
+    margin: 0 0 0 200px;
+  }
+}
+
 .topicos {
   position: relative;
   margin: 48px 16px 0 16px;
@@ -452,32 +775,76 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 130px;
 }
 
 .topicos .topicos-flex-container .svg-container img {
   width: 104px;
   height: 104px;
-  margin: 13px 0;
+  margin: 0 0 13px 0;
 }
 
-.topicos .topicos-flex-container .svg-container:nth-child(3) {
-  margin-top: 36px;
+.topicos .topicos-flex-container .svg-container:nth-child(2) {
+  margin-top: 49px;
 }
 
-.topicos .topicos-flex-container .svg-container:nth-child(5), .topicos .topicos-flex-container .svg-container:nth-child(7) {
-  margin-top: 52px;
+.topicos .topicos-flex-container .svg-container:nth-child(3), .topicos .topicos-flex-container .svg-container:nth-child(4) {
+  margin-top: 65px;
 }
 
-.topicos h3 {
+.topicos .topicos-flex-container .svg-container h3 {
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  .topicos {
+    margin: 64px 0 0 0;
+  }
+  .topicos #topicos {
+    top: -100px;
+  }
+  .topicos h2 {
+    margin-left: 100px;
+    font-size: 4.8rem;
+  }
+  .topicos .topicos-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 69px;
+  }
+  .topicos .topicos-flex-container .svg-container {
+    width: 260px;
+  }
+  .topicos .topicos-flex-container .svg-container img {
+    margin: 0 0 29px 0;
+  }
+  .topicos .topicos-flex-container .svg-container:nth-child(2), .topicos .topicos-flex-container .svg-container:nth-child(3), .topicos .topicos-flex-container .svg-container:nth-child(4) {
+    margin-top: unset;
+  }
+  .topicos .topicos-flex-container .svg-container h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .topicos h2 {
+    margin-left: 200px;
+  }
 }
 
 .novedades {
@@ -499,7 +866,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
 }
 
 .novedades .anchor-button-container {
-  margin: 0px 16px 67px 16px;
+  margin: 36px 16px 67px 16px;
 }
 
 .novedades .anchor-button-container .anchor-button {
@@ -518,7 +885,6 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   font-weight: 500;
   line-height: 2.2rem;
   background: #00F3BB;
-  margin-top: 36px;
 }
 
 .novedades .anchor-button-container .anchor-button:hover {
@@ -530,5 +896,31 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
 .novedades .anchor-button-container .anchor-button:active {
   color: rgba(6, 10, 36, 0.56);
   text-decoration: line-through;
+}
+
+@media screen and (min-width: 1024px) {
+  .novedades {
+    margin-top: 34px;
+    height: 518px;
+    -webkit-clip-path: polygon(0% 25%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 25%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .novedades h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    padding: 213px 0 0 0;
+    font-size: 4.8rem;
+  }
+  .novedades .anchor-button-container {
+    margin: 36px auto 151px auto;
+  }
+  .novedades .anchor-button-container .anchor-button {
+    width: 345px;
+    height: 56px;
+    font-size: 1.8rem;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,21 +13,86 @@
     padding-top: 64px;
     margin-left: 16px;
   }
+  .iframes-flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 21px;
+    iframe{
+      @include spotify-iframe-mobile();
+      &:nth-child(4) {
+        // Al inspeccionar en  Chrome a través de LiveServer, los siguientes estilos se ajustan al mockup:
+          // margin-bottom: -17px; 
+            //  El <iframe> de Spotify le agrega un margin-bottom: 17px;. Con esto lo estoy contrarrestando en el último de los <iframe> para acercarme lo que más quiero a las medidas dadas por el mockup.
+        
+        // Al inspeccionar el deploy a través de GitHub y repl.it en Chrome, los siguientes estilos se ajustan al mockup:
+        margin-bottom: -1px;
+      }
+    } 
+  }
 }
-.iframes-flex-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin-top: 21px;
-  iframe{
-    @include spotify-iframe-mobile();
-    &:nth-child(4) {
-      // Al inspeccionar en  Chrome a través de LiveServer, los siguientes estilos se ajustan al mockup:
-        // margin-bottom: -17px; 
-          //  El <iframe> de Spotify le agrega un margin-bottom: 17px;. Con esto lo estoy contrarrestando en el último de los <iframe> para acercarme lo que más quiero a las medidas dadas por el mockup.
-      
-      // Al inspeccionar el deploy a través de GitHub y repl.it en Chrome, los siguientes estilos se ajustan al mockup:
-      margin-bottom: -1px;
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+
+@media screen and (min-width: 1024px) {
+  .episodios {
+    #episodios {
+      top: -80px;
     }
-  } 
+    margin-top: 5px;
+    height: 942.6px;
+    clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+    h2 {
+      padding-top: 150px;
+      margin-left: 200px;
+      font-size: $desktop-subtitles-font-size;
+    }
+    .iframes-flex-container {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: unset;
+      margin: 26px 100px 17px 100px;
+      width: 85%;
+      iframe {
+        width: 49%;
+        height: 232px;
+      }
+    }
+  }
 }
+@media screen and (min-width: 1440px) {
+  .episodios {
+    margin-top: 5px;
+    height: 1042.6px;
+    clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+    h2 {
+      padding-top: 186px;
+      margin-left: 200px;
+      font-size: $desktop-subtitles-font-size;
+    }
+    .iframes-flex-container {
+      flex-flow: row wrap;
+      align-items: flex-start;
+      margin: 26px 100px 17px 100px;
+      width: 1240px;
+      iframe {
+        width: 584px;
+        height: 232px;
+        &:nth-child(1), &:nth-child(3) {
+          margin-right: 72px;
+        }
+        &:nth-child(3), &:nth-child(4) {
+          margin-top: 68px;
+        }
+      }
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------
+

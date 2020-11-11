@@ -9,10 +9,40 @@
     padding: 64px 16px 0px 16px;
   }
   .anchor-button-container {
-    margin: 0px 16px 67px 16px;
+    margin: 36px 16px 67px 16px;
     .anchor-button {
       @include anchor-button-mobile();
-      margin-top: 36px;
     }
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .novedades {
+    margin-top: 34px;
+    height: 518px;
+    clip-path: polygon(0% 25%, 100% 0, 100% 100%, 0% 100%);
+    h2 {
+      width: max-content;
+      margin: auto;
+      padding: 213px 0 0 0;
+      font-size: $desktop-subtitles-font-size;
+    }
+    .anchor-button-container {
+      margin: 36px auto 151px auto;
+      .anchor-button {
+        width: 345px;
+        height: 56px;
+        font-size: $desktop-button-font-size;
+        margin: auto;
+      }
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------

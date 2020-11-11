@@ -16,7 +16,7 @@ $main-background-color: #FFF;
 $main-background-gradient: linear-gradient(225deg, #0000FF, #0000A3);
 $anchor-button-gradient: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 // ------------------
-//  ---- Desktop ----
+//  ---- desktop ----
 // ------------------
 $desktop-anchor-active-color:rgba(6,10,36,0.56);
 
@@ -32,6 +32,7 @@ $desktop-anchor-active-color:rgba(6,10,36,0.56);
 $main-content-font-family: 'IBM Plex Mono', sans-serif;
 $secondary-font-family: 'IBM Plex Sans', sans-serif;
 
+$font-weight-light: 300;
 $font-weight-normal: normal;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
@@ -53,19 +54,30 @@ $mobile-content-line-height: 2.2rem;
 $mobile-anchor-button-line-height: 2.2rem;
 
 // ------------------
-//  ---- Desktop ----
+// ----  Desktop ----
 // ------------------
 $desktop-anchor-text-decoration: line-through;
 
 $desktop-titles-font-size: 6.4rem;
 $desktop-subtitles-font-size: 4.8rem;
-$desktop-themes-font-size: 2.4rem;
+$desktop-topics-font-size: 2.4rem;
 $desktop-button-font-size: 1.8rem;
 $desktop-nav-anchor-font-size: 1.6rem;
 $desktop-content-font-size: 1.6rem;
 
+$desktop-titles-line-height: 8.4rem;
 $desktop-nav-anchor-line-height: 2.8rem;
 $desktop-content-line-height: 2.4rem;
 $desktop-button-line-height: 2.4rem;
 $desktop-themes-line-height: 2.4rem;
 
+// *************************************
+// *********** Media Queries ***********
+// *************************************
+
+$media-query-desktop-1440px: 1440px;
+$media-query-laptop-1024PX: (min-width: 1024px);
+$media-query-desktop-1440px: (min-width: 1440px);
+$media-query-tablet-768px: (min-width: 768px);
+$media-query-mobileL-425px: (min-width: 425px);
+$media-query-mobileM-375px: (min-width: 375px);

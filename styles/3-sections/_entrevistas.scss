@@ -18,3 +18,42 @@
     }
   }
 }
+  // ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .entrevistas {
+    #entrevistas {
+      top: -200px;
+    }
+    margin: 245px 0 0 0;
+    h2 {
+      margin: 0 0 0 100px;
+      font-size: $desktop-subtitles-font-size;
+    }
+    .imgs-entrevistas-flex-container {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 36px;
+      img {
+        width: 33vw;
+        max-width: 33vw;
+        height: 50%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .entrevistas {
+    h2 {
+      margin: 0 0 0 200px;
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------

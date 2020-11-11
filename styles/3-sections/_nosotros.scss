@@ -12,3 +12,52 @@
     margin-top: 8px;
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .nosotros {
+    margin: 20.4px 0 0 520px;
+    width: 464px;
+    #nosotros {
+      top: -350px;
+    }
+    h2 {
+      font-size: $desktop-subtitles-font-size;
+    }
+    p {
+      font-size: $desktop-content-font-size;
+      line-height: $desktop-content-line-height;
+      &:nth-child(3) {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nosotros {
+    margin-left: 650px; 
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nosotros {
+    margin: 0 0 0 720px;
+    width: 464px;
+    h2 {
+      font-size: $desktop-subtitles-font-size;
+    }
+    p {
+      font-size: $desktop-content-font-size;
+      line-height: $desktop-content-line-height;
+      &:nth-child(3) {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------

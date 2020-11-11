@@ -12,3 +12,41 @@
     object-fit: scale-down;
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .offFlow-image-contain {
+    width: 420.6px;
+    height: 620px;
+    top: 1120px;
+    left: 50px;  
+    .img-mary-allen {
+      width: 457.6px;
+      height: 660px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .offFlow-image-contain {
+    left: 120px; 
+  }
+}
+@media screen and (min-width: 1440px) {
+  .offFlow-image-contain {
+    width: 457.6px;
+    height: 660px;
+    top: 1220px;
+    left: 200px;
+    .img-mary-allen {
+      width: 457.6px;
+      height: 660px;
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------
