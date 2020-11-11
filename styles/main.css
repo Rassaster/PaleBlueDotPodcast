@@ -608,7 +608,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
             clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
   }
   .episodios #episodios {
-    top: -48px;
+    top: 82px;
   }
   .episodios h2 {
     padding-top: 150px;
@@ -810,7 +810,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
     width: 464px;
   }
   .nosotros #nosotros {
-    top: -350px;
+    top: -300px;
   }
   .nosotros h2 {
     font-size: 4.8rem;
@@ -921,7 +921,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
     margin: 245px 0 0 0;
   }
   .entrevistas #entrevistas {
-    top: -200px;
+    top: -80px;
   }
   .entrevistas h2 {
     font-size: 4.8rem;
