@@ -11,16 +11,48 @@ header {
   align-items: center;
   background: $main-background-color;
   z-index: 80;
+  
   a, .logo-header {
+    position: relative;
     width: 2.4rem;
     height: 2.4rem;
     margin-left: 16px;
+    z-index: 100;
+  }
+  .logo-header {
+    animation: rueda 2.5s ease-in-out;
+  }
+}
+@keyframes rueda {
+  0% {
+    left: 425px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 0px;
+    transform: rotate(1080deg);
   }
 }
 // ******************************************************
 // ***************** Media Queries **********************
 // ******************************************************
-
+// ------------------------------------------------------
+// --------------------- Tablet -------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 768px) {
+  @keyframes rueda {
+    0% {
+      left: 1024px;
+      transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      transform: rotate(1080deg);
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // ------------------------------------------------------
 // --------------------- Desktop ------------------------
 // ------------------------------------------------------
@@ -40,6 +72,28 @@ header {
       }
     }
   }
+  @keyframes rueda {
+    0% {
+      left: 1280px;
+      transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      transform: rotate(1080deg);
+    }
+  }
 }
-// ------------------------------------------------------
-// ------------------------------------------------------
+@media screen and (min-width: 1440px) {
+  @keyframes rueda {
+    0% {
+      left: 1550px;
+      transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      transform: rotate(1080deg);
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

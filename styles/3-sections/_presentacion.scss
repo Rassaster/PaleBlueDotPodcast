@@ -27,7 +27,33 @@
 // ******************************************************
 // ***************** Media Queries **********************
 // ******************************************************
-
+// ------------------------------------------------------
+// --------------------- Tablet ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 768px) {
+  .presentacion {
+    margin: 29px 16px 0 100px; 
+    .mobile-p {
+      display: none;
+    }
+    .desktop-p {
+      display: block;
+      margin-top: 8px;
+      width: 428px;
+      text-align: justify;
+      font-size: $desktop-content-font-size;
+      line-height: $desktop-content-line-height;
+    }
+    .anchor-button {
+      width: 190px;
+      height: 40px;
+      font-size: $desktop-button-font-size;
+      line-height: $desktop-button-line-height;
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // ------------------------------------------------------
 // --------------------- Desktop ------------------------
 // ------------------------------------------------------
@@ -41,16 +67,9 @@
         display: none;
       }
     }
-    .mobile-p {
-      display: none;
-    }
     .desktop-p {
-      display: block;
       margin-top: 0px;
       width: 628px;
-      text-align: justify;
-      font-size: $desktop-content-font-size;
-      line-height: $desktop-content-line-height;
     }
     .anchor-button {
       width: 226px;
@@ -65,6 +84,6 @@
     margin: 120px 0 0 200px;
   }
 }
-// ------------------------------------------------------
-// ------------------------------------------------------
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

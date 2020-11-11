@@ -20,9 +20,9 @@
 // ******************************************************
 
 // ------------------------------------------------------
-// --------------------- Desktop ------------------------
+// --------------------- Tablet -------------------------
 // ------------------------------------------------------
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .novedades {
     margin-top: 34px;
     height: 518px;
@@ -31,18 +31,35 @@
       width: max-content;
       margin: auto;
       padding: 213px 0 0 0;
-      font-size: $desktop-subtitles-font-size;
     }
     .anchor-button-container {
       margin: 36px auto 151px auto;
       .anchor-button {
-        width: 345px;
-        height: 56px;
-        font-size: $desktop-button-font-size;
+        width: 280px;
+        height: 45px;
         margin: auto;
       }
     }
   }
 }
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 // ------------------------------------------------------
+// --------------------- Desktop ------------------------
 // ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .novedades {
+    h2 {
+
+      font-size: $desktop-subtitles-font-size;
+    }
+    .anchor-button-container {
+      .anchor-button {
+        font-size: $desktop-button-font-size;
+      }
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

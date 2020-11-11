@@ -39,9 +39,69 @@ header {
 }
 
 header a, header .logo-header {
+  position: relative;
   width: 2.4rem;
   height: 2.4rem;
   margin-left: 16px;
+  z-index: 100;
+}
+
+header .logo-header {
+  -webkit-animation: rueda 2.5s ease-in-out;
+          animation: rueda 2.5s ease-in-out;
+}
+
+@-webkit-keyframes rueda {
+  0% {
+    left: 425px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    left: 0px;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+@keyframes rueda {
+  0% {
+    left: 425px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    left: 0px;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes rueda {
+    0% {
+      left: 1024px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
+  }
+  @keyframes rueda {
+    0% {
+      left: 1024px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -59,6 +119,57 @@ header a, header .logo-header {
     width: 3.6rem;
     height: 3.6rem;
     margin: unset;
+  }
+  @-webkit-keyframes rueda {
+    0% {
+      left: 1280px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
+  }
+  @keyframes rueda {
+    0% {
+      left: 1280px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @-webkit-keyframes rueda {
+    0% {
+      left: 1550px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
+  }
+  @keyframes rueda {
+    0% {
+      left: 1550px;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      left: 0px;
+      -webkit-transform: rotate(1080deg);
+              transform: rotate(1080deg);
+    }
   }
 }
 
@@ -388,6 +499,29 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   text-decoration: line-through;
 }
 
+@media screen and (min-width: 768px) {
+  .presentacion {
+    margin: 29px 16px 0 100px;
+  }
+  .presentacion .mobile-p {
+    display: none;
+  }
+  .presentacion .desktop-p {
+    display: block;
+    margin-top: 8px;
+    width: 428px;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .presentacion .anchor-button {
+    width: 190px;
+    height: 40px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .presentacion {
     margin: 120px 0 0 100px;
@@ -399,16 +533,9 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   .presentacion h1 br {
     display: none;
   }
-  .presentacion .mobile-p {
-    display: none;
-  }
   .presentacion .desktop-p {
-    display: block;
     margin-top: 0px;
     width: 628px;
-    text-align: justify;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
   }
   .presentacion .anchor-button {
     width: 226px;
@@ -471,6 +598,39 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
 
 .episodios .iframes-flex-container iframe:nth-child(4) {
   margin-bottom: -1px;
+}
+
+@media screen and (min-width: 768px) {
+  .episodios {
+    margin-top: 5px;
+    height: 842.6px;
+    -webkit-clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+  }
+  .episodios #episodios {
+    top: -48px;
+  }
+  .episodios h2 {
+    padding-top: 150px;
+    margin-left: 100px;
+  }
+  .episodios .iframes-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    margin: 26px 100px 17px 100px;
+  }
+  .episodios .iframes-flex-container iframe {
+    width: 49%;
+    height: 232px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -564,6 +724,19 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
      object-fit: scale-down;
 }
 
+@media screen and (min-width: 768px) {
+  .offFlow-image-contain {
+    width: 420.6px;
+    height: 420px;
+    top: 1020px;
+    left: 0px;
+  }
+  .offFlow-image-contain .img-mary-allen {
+    width: 457.6px;
+    height: 460px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .offFlow-image-contain {
     width: 420.6px;
@@ -618,6 +791,17 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   font-size: 1.4rem;
   line-height: 2.2rem;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .nosotros {
+    margin: 0px 0 0 340px;
+    width: 364px;
+    text-align: justify;
+  }
+  .nosotros #nosotros {
+    top: -200px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -702,16 +886,15 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   height: 243px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .entrevistas {
-    margin: 245px 0 0 0;
+    margin: 180px 0 0 0;
   }
   .entrevistas #entrevistas {
-    top: -200px;
+    top: -120px;
   }
   .entrevistas h2 {
     margin: 0 0 0 100px;
-    font-size: 4.8rem;
   }
   .entrevistas .imgs-entrevistas-flex-container {
     -webkit-box-orient: horizontal;
@@ -730,6 +913,18 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
     width: 33vw;
     max-width: 33vw;
     height: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .entrevistas {
+    margin: 245px 0 0 0;
+  }
+  .entrevistas #entrevistas {
+    top: -200px;
+  }
+  .entrevistas h2 {
+    font-size: 4.8rem;
   }
 }
 
@@ -806,6 +1001,40 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
+  .topicos {
+    margin-top: 60px;
+  }
+  .topicos #topicos {
+    top: -40px;
+  }
+  .topicos h2 {
+    margin-left: 100px;
+  }
+  .topicos .topicos-flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 45px;
+  }
+  .topicos .topicos-flex-container .svg-container {
+    width: 50%;
+  }
+  .topicos .topicos-flex-container .svg-container img {
+    margin: 0 0 10px 0;
+  }
+  .topicos .topicos-flex-container .svg-container:nth-child(2) {
+    margin-top: unset;
+  }
+  .topicos .topicos-flex-container .svg-container:nth-child(3), .topicos .topicos-flex-container .svg-container:nth-child(4) {
+    margin-top: 45px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .topicos {
     margin: 64px 0 0 0;
@@ -814,21 +1043,17 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
     top: -100px;
   }
   .topicos h2 {
-    margin-left: 100px;
     font-size: 4.8rem;
   }
   .topicos .topicos-flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     margin-top: 69px;
   }
   .topicos .topicos-flex-container .svg-container {
-    width: 260px;
+    width: 22%;
   }
   .topicos .topicos-flex-container .svg-container img {
     margin: 0 0 29px 0;
@@ -898,7 +1123,7 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
   text-decoration: line-through;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .novedades {
     margin-top: 34px;
     height: 518px;
@@ -911,16 +1136,23 @@ nav .hamburger-menu input:checked ~ span:nth-child(4) {
     width: max-content;
     margin: auto;
     padding: 213px 0 0 0;
-    font-size: 4.8rem;
   }
   .novedades .anchor-button-container {
     margin: 36px auto 151px auto;
   }
   .novedades .anchor-button-container .anchor-button {
-    width: 345px;
-    height: 56px;
-    font-size: 1.8rem;
+    width: 280px;
+    height: 45px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .novedades h2 {
+    font-size: 4.8rem;
+  }
+  .novedades .anchor-button-container .anchor-button {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
