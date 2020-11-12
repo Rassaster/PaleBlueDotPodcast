@@ -5,4 +5,8 @@ We received a mockup for a podcast landing page. The main goal of the project is
 I decided to use a SASS architecture for the styling.
 
 URL: https://rassaster.github.io/PaleBlueDotPodcast/
+<<<<<<< HEAD
 GitHub Repository: https://github.com/Rassaster/PaleBlueDotPodcast 
+=======
+GitHub Repository: https://github.com/Rassaster/PaleBlueDotPodcast 
+>>>>>>> f9423107e2bd45993fe631711c1ab96845b84aa3
