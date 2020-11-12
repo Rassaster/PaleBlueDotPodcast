@@ -16,10 +16,86 @@
       @include svg-container-content();
     }
   }
-  h3 {
-    text-align: center;
-    font-family: $secondary-font-family;
-    font-size: $mobile-themes-font-size;
-    font-weight: $font-weight-semibold;
+  // h3 {
+  //   text-align: center;
+  //   font-family: $secondary-font-family;
+  //   font-size: $mobile-themes-font-size;
+  //   font-weight: $font-weight-semibold;
+  // }
+}
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Tablet -------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 768px) {
+  .topicos {
+    margin-top: 60px;
+    #topicos {
+      top: -40px;
+    }
+    h2 {
+      margin-left: 100px;
+    }
+    .topicos-flex-container {
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: 45px;
+      .svg-container {
+        width: 50%;
+        img {
+          margin: 0 0 10px 0;
+        }
+        &:nth-child(2) {
+          margin-top: unset;
+        }
+        &:nth-child(3), &:nth-child(4) {
+          margin-top: 45px;
+        }
+      }
+    }
   }
 }
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .topicos {
+    #topicos {
+      top: -100px;
+    }
+    margin: 64px 0 0 0;
+    h2 {
+      font-size: $desktop-subtitles-font-size;
+    }
+    .topicos-flex-container {
+      flex-flow: row nowrap;
+      margin-top: 69px;
+      .svg-container {
+        width: 22%;
+        img {
+          margin: 0 0 29px 0;
+        }
+        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+          margin-top: unset;
+        }
+        h3 {
+          font-size: $desktop-topics-font-size;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .topicos {
+    h2 {
+      margin-left: 200px;
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

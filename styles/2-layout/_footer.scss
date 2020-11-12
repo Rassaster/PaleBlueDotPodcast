@@ -27,3 +27,37 @@ footer {
     }
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  footer {
+    top: 80px;
+    flex-flow: row;
+    justify-content: space-between;
+    p {
+      margin-left: 100px;
+      font-size: $desktop-content-font-size;
+    }
+    .social-container {
+      margin-right: 100px;
+      width: max-content;
+      a {
+        margin-right: 45px;
+        font-size: $desktop-button-font-size;
+        &:nth-child(1) {
+          margin-left: 0px;
+        }
+        &:nth-child(5) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------

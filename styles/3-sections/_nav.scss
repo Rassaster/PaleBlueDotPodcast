@@ -82,5 +82,56 @@ nav {
     }
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
 
-// Media Query
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  nav {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 100px;
+    .hamburger-menu {
+      width: unset;
+      height: unset;
+      span, input {
+        display: none;
+        input:checked ~ ul {
+          height: auto;
+        }
+      }
+      ul {
+        display: flex;
+        position: relative;
+        top: unset;
+        right: unset;
+        width: auto;
+        background-color: $ternary-color;
+        overflow: visible;
+        height: 28px;
+        transition: unset;
+        li {
+          .nav-anchor {
+            font-size: $desktop-nav-anchor-font-size;
+            line-height: $desktop-nav-anchor-line-height;
+            font-weight: $font-weight-normal;
+            color: $main-font-color;
+            margin: unset;
+            height: unset;
+            padding-right: 28px;
+          }
+          &:nth-child(4) {
+            .nav-anchor {
+              padding-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ------------------------------------------------------
+// ------------------------------------------------------

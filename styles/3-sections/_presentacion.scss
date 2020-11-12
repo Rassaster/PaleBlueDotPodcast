@@ -12,12 +12,78 @@
   span:nth-child(3) {
     color: $primary-color;
   }
-  p {
+  .mobile-p {
     @include paragraph-content-mobile();
     margin-top: 16px;
+  }
+  .desktop-p {
+    display: none;
   }
   .anchor-button {
     @include anchor-button-mobile;
     margin-top: 36px;
   }
 }
+// ******************************************************
+// ***************** Media Queries **********************
+// ******************************************************
+// ------------------------------------------------------
+// --------------------- Tablet ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 768px) {
+  .presentacion {
+    margin: 29px 16px 0 100px; 
+    .mobile-p {
+      display: none;
+    }
+    .desktop-p {
+      display: block;
+      margin-top: 8px;
+      width: 428px;
+      text-align: justify;
+      font-size: $desktop-content-font-size;
+      line-height: $desktop-content-line-height;
+    }
+    .anchor-button {
+      width: 190px;
+      height: 40px;
+      font-size: $desktop-button-font-size;
+      line-height: $desktop-button-line-height;
+    }
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ------------------------------------------------------
+// --------------------- Desktop ------------------------
+// ------------------------------------------------------
+@media screen and (min-width: 1024px) {
+  .presentacion {
+    margin: 120px 0 0 100px;
+    h1 {
+      font-size: $desktop-titles-font-size;
+      line-height: $desktop-titles-line-height;
+      br {
+        display: none;
+      }
+    }
+    .desktop-p {
+      margin-top: 0px;
+      width: 628px;
+    }
+    .anchor-button {
+      width: 226px;
+      height: 56px;
+      font-size: $desktop-button-font-size;
+      line-height: $desktop-button-line-height;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .presentacion {
+    margin: 120px 0 0 200px;
+  }
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
