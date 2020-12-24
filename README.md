@@ -1,5 +1,5 @@
 # Podcast Channel (Pale Blue Dot)
-### < HTML and CSS landing page project for [Acamica](https://www.acamica.com/) academy. >
+### < HTML and CSS landing page project for [Acamica](https://www.acamica.com/desarrollo-web-full-stack) academy. >
 This project includes the usage of HTML, CSS and Sass.
 
 It was done with a "mobile first" aproach.
